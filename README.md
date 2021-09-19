@@ -1,7 +1,7 @@
 # BIU/YU Summer Research Program | Computer Science Students
 Authors: Jonathan Haller, Raziel Siegman, and Yair Caplan, under the guidance of Dr. Hillel Kugler
 
->*NOTE: this README assumes prior familiarity with [RE:IN](https://www.microsoft.com/en-us/research/project/reasoning-engine-for-interaction-networks-rein/) and [BRE:IN](https://github.com/kuglerh/BREIN). For a slideshow that explains the technical background (both biological and computational), click [here](https://docs.google.com/presentation/d/1JNvWeRSaWrJjgjTuVT6Z8ynikZ-sNz9GIp9BsK0STwY/edit?usp=sharing)
+>*NOTE: this README assumes prior familiarity with [RE:IN](https://www.microsoft.com/en-us/research/project/reasoning-engine-for-interaction-networks-rein/) and [BRE:IN](https://github.com/kuglerh/BREIN). See this [paper](https://www.researchgate.net/publication/335854453_BREIN_-_A_Backend_for_Reasoning_About_Interaction_Networks_with_Temporal_Logic) and [slideshow](https://docs.google.com/presentation/d/1JNvWeRSaWrJjgjTuVT6Z8ynikZ-sNz9GIp9BsK0STwY/edit?usp=sharing) for the technical background (both biological and computational).
 
 ## Projects
 ### 1 | BRE:IN Enhancements
