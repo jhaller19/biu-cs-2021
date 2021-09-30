@@ -19,7 +19,7 @@ import java.util.List;
  *   		at <time step>. The implication of this result is that it gives us evidence that perturbating the
  *   		listed node(s) plays some role in the <target node> arriving at at the OFF state at <time step>.
  *
- *  	3. "Inconclusive" indicates that there were solutions for both or neither of the anticipated states of
+ *  		3. 	"Inconclusive" indicates that there were solutions for both or neither of the anticipated states of
  *  		<target node> and therefore no conlcusion can be drawn as the perturbation of the listed node did not appear
  *  		to have a direct impact on <target node>
  *
@@ -83,13 +83,11 @@ public class PerturbationSimulator {
 				//Create spec file where target node is expected to be ON and run NAE
 				String onFile = createSpecFile(nodes, specFileTemplate, node, 1, typeOfPerturbationArg,
 						targetNode, typeOfPerturbation, timeStep, modelFileName, specFileName);
-				//System.out.println(node + " Expecting target: On...");
 				onFileSolutionsExist = runNAE(onFile, modelFileName, rt, mode);
 
 				//Create spec file where target node is expected to be OFF and run NAE
 				String offFile = createSpecFile(nodes, specFileTemplate, node, 0, typeOfPerturbationArg,
 						targetNode, typeOfPerturbation, timeStep, modelFileName, specFileName);
-				//System.out.println(node + " Expecting target: Off...");
 				offFileSolutionsExist = runNAE(offFile, modelFileName, rt, mode);
 				//Process result to see if we have a prediction
 				processResults(out, onFileSolutionsExist, offFileSolutionsExist, node);
@@ -102,12 +100,10 @@ public class PerturbationSimulator {
 					//Create spec file where target node is expected to be ON and run NAE
 					String onFile = createDoubleSpecFile(nodes, specFileTemplate, node1, node2, 1, typeOfPerturbationArg, targetNode,
 							typeOfPerturbation, timeStep, modelFileName, specFileName);
-					//System.out.println(node1 + " & " + node2 + ": Expecting target on...");
 					onFileSolutionsExist = runNAE(onFile, modelFileName, rt, mode);
 					//Create spec file where target node is expected to be OFF and run NAE
 					String offFile = createDoubleSpecFile(nodes, specFileTemplate, node1, node2, 0, typeOfPerturbationArg,
 							targetNode, typeOfPerturbation, timeStep, modelFileName, specFileName);
-					//System.out.println(node1 + " & " + node2 + ": Expecting target: off...");
 					offFileSolutionsExist = runNAE(offFile, modelFileName, rt, mode);
 					//Process result to see if we have a prediction
 					processResults(out, onFileSolutionsExist, offFileSolutionsExist, node1 + " & " + node2);
@@ -143,14 +139,6 @@ public class PerturbationSimulator {
 		BufferedReader reader=new BufferedReader(new InputStreamReader(pr.getInputStream()));
 		String firstLine = null;
 		String line;
-		/*int i = 0;
-		while((line = reader.readLine()) != null){
-			if(i == 0){
-				firstLine = line;
-			}
-			System.out.println(line);
-		}
-		return !(firstLine.equals("No Solutions Found"));*/
 		return !(firstLine = reader.readLine()).equals("No Solutions Found");
 	}
 
