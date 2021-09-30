@@ -13,15 +13,15 @@ import java.util.List;
  * 			at <time step>. The implication of this result is that it gives us evidence that perturbating the
  * 			listed node(s) plays some role in the <target node> arriving at at the ON state at <time step>.
  *
- * 		2. 	A "(-)" indicates that that there WERE solutions for the model when the node(s) listed was perturbated (either
- *   		KO'd or FE'd) and we anticipted that the <target node> would be OFF at <time step> AND there were NO solutions
- *  		for the model where the node(s) listed was perturbated and we anticipated that the <target node> would be ON
- *   		at <time step>. The implication of this result is that it gives us evidence that perturbating the
- *   		listed node(s) plays some role in the <target node> arriving at at the OFF state at <time step>.
+ * 		2. A "(-)" indicates that that there WERE solutions for the model when the node(s) listed was perturbated (either
+ *   			KO'd or FE'd) and we anticipted that the <target node> would be OFF at <time step> AND there were NO solutions
+ *  			for the model where the node(s) listed was perturbated and we anticipated that the <target node> would be ON
+ *   			at <time step>. The implication of this result is that it gives us evidence that perturbating the
+ *   			listed node(s) plays some role in the <target node> arriving at at the OFF state at <time step>.
  *
- *  		3. 	"Inconclusive" indicates that there were solutions for both or neither of the anticipated states of
- *  		<target node> and therefore no conlcusion can be drawn as the perturbation of the listed node did not appear
- *  		to have a direct impact on <target node>
+ *  		3. "Inconclusive" indicates that there were solutions for both or neither of the anticipated states of
+ *  			<target node> and therefore no conlcusion can be drawn as the perturbation of the listed node did not appear
+ *  			to have a direct impact on <target node>
  *
  * 	Arguments:
  * 		<model file> <spec file> <mode> <single or double> <target node> <type of perturbation (KO or FE)> <time step>
