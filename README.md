@@ -16,7 +16,7 @@ A number of new features and improvements were implemented in the BRE:IN tool it
 We built 2 programs as abstractions on top of BRE:IN
 - I | [Perturbation Simulator](https://github.com/jhaller19/biu-cs-2021/blob/main/BREIN_nuSmv_version/PerturbationSimulator.java)
     - allows the user to view the effect of perturbating ("knocking out" or "overexpressing") every other node--or pairs of nodes--on a selected target node at a selected time step
-- II | [Minimal-Unsatisfiable-Core (MUC) Identifier] (https://github.com/jhaller19/biu-cs-2021/blob/main/BREIN_nuSmv_version/MinContradictions.java)
+- II | [Minimal-Unsatisfiable-Core (MUC) Identifier](https://github.com/jhaller19/biu-cs-2021/blob/main/BREIN_nuSmv_version/MinContradictions.java)
     - The MUC Indentifier algorithm produces minimal sets of contradictory experiments.  Within each of these sets, it also has the capability to produce minimal sets of contradictory constraints, or alternitavely, to produce minimal sets of constraints inrrespective of experiments.
 ### 3 | Inter-tool Conversions
 ----------
